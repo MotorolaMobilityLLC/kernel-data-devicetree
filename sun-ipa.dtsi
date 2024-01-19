@@ -25,7 +25,7 @@
 
         /* SVS2 */
         qcom,svs2 =
-		<0 0 0 1300000 0 76800>;
+                <600000 0 600000 1300000 0 76800>;
 
         /* SVS */
         qcom,svs =
@@ -47,8 +47,7 @@
 };
 
 &ipa_smmu_ap {
-	qcom,additional-mapping =
-		/* modem tables in IMEM */
-		<0x14683000 0x14683000 0x2000>;
-	qcom,ipa-q6-smem-size = <55296>;
+        qcom,additional-mapping =
+                /* modem tables in IMEM */
+                <0x14683000 0x14683000 0x2000>;
 };

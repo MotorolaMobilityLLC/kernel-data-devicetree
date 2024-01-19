@@ -1,6 +1,5 @@
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-ipa.dtbo
-dtbo-y += smem-mailbox.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_KALAMA),y)
