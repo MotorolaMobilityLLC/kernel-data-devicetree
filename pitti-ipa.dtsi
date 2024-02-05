@@ -68,7 +68,7 @@
                 qcom,ulso-ip-id-max-windows-val = <0x7fff>;
                 qcom,max_num_smmu_cb = <4>;
                 clock-names = "core_clk";
-                clocks = <&rpmhcc RPMH_IPA_CLK>;
+                clocks = <&rpmcc RPM_SMD_IPA_CLK>;
                 qcom,interconnect,num-cases = <5>;
                 qcom,interconnect,num-paths = <3>;
                 interconnects = <&system_noc MASTER_IPA &bimc SLAVE_EBI_CH0>,
