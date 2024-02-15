@@ -126,7 +126,6 @@
                                 /* modem tables in IMEM */
                                 <0xC123000 0xC123000 0x2000>;
                         qcom,iommu-dma = "atomic";
-                        dma-coherent;
                         qcom,ipa-q6-smem-size = <45056>;
                 };
 
@@ -134,7 +133,6 @@
                         compatible = "qcom,ipa-smmu-wlan-cb";
                         iommus = <&apps_smmu 0x0A1 0x0>;
                         qcom,iommu-dma = "atomic";
-                        dma-coherent;
                 };
 
                 ipa_smmu_uc: ipa_smmu_uc {
@@ -142,13 +140,11 @@
                         iommus = <&apps_smmu 0x0A2 0x0>;
                         qcom,iommu-dma-addr-pool = <0x20000000 0x20000000>;
                         qcom,iommu-dma = "atomic";
-                        dma-coherent;
                 };
 
                 ipa_smmu_11ad: ipa_smmu_11ad {
                         compatible = "qcom,ipa-smmu-11ad-cb";
                         iommus = <&apps_smmu 0x0A4 0x0>;
-                        dma-coherent;
                         qcom,shared-cb;
                         qcom,iommu-group = <>;
                 };
