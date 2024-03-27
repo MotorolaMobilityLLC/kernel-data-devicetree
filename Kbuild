@@ -22,6 +22,10 @@ ifeq ($(CONFIG_ARCH_PITTI),y)
 dtbo-y += pitti-ipa.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_VOLCANO),y)
+dtbo-y += volcano-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
