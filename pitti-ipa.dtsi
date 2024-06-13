@@ -67,8 +67,8 @@
                 qcom,ulso-ip-id-min-windows-val = <0>;
                 qcom,ulso-ip-id-max-windows-val = <0x7fff>;
                 qcom,wan-rx-ring-size = <128>;
-                qcom,ipa-gen-rx-cmn-page-pool-sz-factor = <4>;
-                qcom,ipa-gen-rx-cmn-temp-pool-sz-factor = <1>;
+                qcom,ipa-gen-rx-cmn-page-pool-sz-factor = <3>;
+                qcom,ipa-gen-rx-cmn-temp-pool-sz-factor = <2>;
                 qcom,max_num_smmu_cb = <4>;
                 clock-names = "core_clk";
                 clocks = <&rpmcc RPM_SMD_IPA_CLK>;
