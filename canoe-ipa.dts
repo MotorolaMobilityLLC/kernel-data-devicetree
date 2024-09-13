@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/soc/qcom,ipcc.h>
+#include <dt-bindings/interconnect/qcom,canoe.h>
+#include <dt-bindings/clock/qcom,gcc-canoe.h>
+#include <dt-bindings/clock/qcom,rpmh.h>
+#include "canoe-ipa.dtsi"
+
+/ {
+	model = "Qualcomm Technologies, Inc. Canoe SOC";
+	compatible = "qcom,canoe";
+	qcom,msm-id = <0x10294 0x10000>, <0x10294 0x20000>,
+				<0x1010294 0x10000>, <0x1010294 0x20000>,
+				<0x1030294 0x10000>, <0x1030294 0x20000>;
+	qcom,board-id = <0 0>;
+};

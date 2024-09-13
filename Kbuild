@@ -1,3 +1,7 @@
+ifeq ($(CONFIG_ARCH_CANOE),y)
+dtbo-y += canoe-ipa.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_SUN),y)
 dtbo-y += sun-ipa.dtbo
 dtbo-y += smem-mailbox.dtbo
