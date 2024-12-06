@@ -39,6 +39,10 @@ ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += ravelin-ipa.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_RAVELIN),y)
+dtbo-y += vienna-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
