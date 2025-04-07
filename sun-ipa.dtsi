@@ -64,7 +64,7 @@
         qcom,additional-mapping =
         /* modem tables in IMEM */
                 <0x14683000 0x14683000 0x2000>;
-        qcom,ipa-q6-smem-size = <55296>;
+        qcom,ipa-q6-smem-size = <102400>;
 };
 
 &ipa_smmu_uc {
