@@ -1,5 +1,6 @@
 ifeq ($(CONFIG_ARCH_CANOE),y)
 dtbo-y += canoe-ipa.dtbo
+dtbo-y += canoe-smem-mailbox.dtbo
 endif
 
 ifeq ($(CONFIG_ARCH_SUN),y)
