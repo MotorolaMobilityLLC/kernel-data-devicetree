@@ -44,6 +44,10 @@ ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += vienna-ipa.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_YUPIK),y)
+dtbo-y += yupik-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
