@@ -143,6 +143,7 @@ memory allocation over a PCIe bridge
 							the MSI IRQ number to clear the respective interrupt
 - qcom,gsi-rmnet-ctl-evt-ring-intvec: Integer vector value for the QMAP flow control pipe
 - qcom,gsi-rmnet-ll-evt-ring-intvec: Integer vector value for the low lat data pipe
+- qcom,ipa-config-is-iot: flag to indicate the IOT platform config using MDM endpoints.
 
 IPA pipe sub nodes (A2 static pipes configurations):
 

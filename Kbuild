@@ -40,7 +40,7 @@ ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += ravelin-ipa.dtbo
 endif
 
-ifeq ($(CONFIG_ARCH_RAVELIN),y)
+ifeq ($(CONFIG_ARCH_VIENNA),y)
 dtbo-y += vienna-ipa.dtbo
 endif
 
