@@ -48,6 +48,10 @@ ifeq ($(CONFIG_ARCH_YUPIK),y)
 dtbo-y += yupik-ipa.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_ALOR),y)
+dtbo-y += alor-ipa.dtbo
+endif
+
 always-y	:= $(dtb-y) $(dtbo-y)
 subdir-y	:= $(dts-dirs)
 clean-files	:= *.dtb *.dtbo
