@@ -16,6 +16,6 @@
 /{
         model = "Qualcomm Technologies, Inc. YUPIK-IOT";
         compatible = "qcom,yupik-iot";
-        qcom,msm-id = <497 0x10000>;
+        qcom,msm-id = <497 0x10000>, <576 0x10000>;
         qcom,board-id = <0 0>;
 };
