@@ -50,6 +50,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_ALOR),y)
 dtbo-y += alor-ipa.dtbo
+dtbo-y += alor-smem-mailbox.dtbo
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
