@@ -27,27 +27,26 @@
 
 	/* No vote */
 	qcom,no-vote =
-	<0 0 0 0 0 0 0 0>;
-		/* SVS2 */
+		<0 0 0 0 0 0>;
+
+	/* SVS2 */
 	qcom,svs2 =
-	<80000 590000 80000 2160000 80000 560000 80000 120000>;
+		<0 0 0 1300000 0 76800>;
 
 	/* SVS */
 	qcom,svs =
-	<80000 800000 80000 5414000 80000 920000 80000 180000>;
+		<1200000 0 1200000 2800000 0 150000>;
 
 	/* NOMINAL */
 	qcom,nominal =
-	<206000 1500000 206000 7200000 206000 1560000 206000 380000>;
+		<2400000 0 2400000 5500000 0 400000>;
 
 	/* TURBO */
 	qcom,turbo =
-	<206000 1800000 206000 8500000 206000 1880000 206000 520000>;
+		<3600000 0 3600000 5500000 0 400000>;
 
-	qcom,bus-vector-names =
-	"MIN", "SVS2", "SVS", "NOMINAL", "TURBO";
-	qcom,throughput-threshold = <310 600 1000>;
-	qcom,scaling-exceptions = <>;
+	qcom,bus-vector-names = "MIN", "SVS2", "SVS", "NOMINAL",
+		"TURBO";
 
 	ipa_smmu_ap_partition: ipa_smmu_ap_partition {
 		iommu-addresses = <&ipa_smmu_ap 0x0 0x20000000>,
