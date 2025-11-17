@@ -13,10 +13,11 @@
 
 / {
 	model = "Qualcomm Technologies, Inc. Canoe SoC";
-	compatible = "qcom,canoe";
+	compatible = "qcom,canoe", "qcom,whale";
 	qcom,msm-id = <660 0x10000>, <660 0x20000>,
 				<0x1000294 0x10000>, <0x1000294 0x20000>,
 				<704 0x10000>, <704 0x20000>,
-				<0x10002C0 0x10000>, <0x10002C0 0x20000>;
+				<0x10002C0 0x10000>, <0x10002C0 0x20000>,
+				<722 0x10000>, <722 0x30000>;
 	qcom,board-id = <0 0>;
 };
