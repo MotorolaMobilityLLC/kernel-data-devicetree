@@ -36,6 +36,14 @@ ifeq ($(CONFIG_ARCH_MONACO),y)
 dtbo-y += monaco-ipa.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_KHAJE),y)
+dtbo-y += khaje-ipa.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_BENGAL),y)
+dtbo-y += bengal-ipa.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_RAVELIN),y)
 dtbo-y += ravelin-ipa.dtbo
 endif
