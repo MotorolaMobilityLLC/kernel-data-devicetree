@@ -67,21 +67,21 @@
 		/delete-property/ qcom,iommu-dma-addr-pool;
 		qcom,ipa-dma-addr-pool = <0x20000000 0x20000000>;
 		memory-region = <&ipa_smmu_ap_partition>;
-		iommus = <&apps_smmu 0x00A1 0x0>;
+		iommus = <&apps_smmu 0x00A0 0x0>;
 		qcom,additional-mapping =
 			/* modem tables in IMEM */
 			<0x14683000 0x14683000 0x2000>;
 	};
 
 	ipa_smmu_wlan {
-		iommus = <&apps_smmu 0x00A2 0x0>;
+		iommus = <&apps_smmu 0x00A1 0x0>;
 	};
 
 	ipa_smmu_uc {
 		/delete-property/ qcom,iommu-dma-addr-pool;
 		qcom,ipa-dma-addr-pool = <0x20000000 0x20000000>;
 		memory-region = <&ipa_smmu_uc_partition>;
-		iommus = <&apps_smmu 0x00A3 0x0>;
+		iommus = <&apps_smmu 0x00A2 0x0>;
 	};
 
 	ipa_smmu_11ad: ipa_smmu_11ad {
