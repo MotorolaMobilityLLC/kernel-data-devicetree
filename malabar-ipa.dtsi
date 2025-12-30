@@ -27,8 +27,8 @@
         ipa_hw: qcom,ipa@5400000 {
                 compatible = "qcom,ipa";
                 reg =
-                        <0x05400000 0x84000>,
-                        <0x05404000 0xfc000>;
+                        <0x0 0x05400000 0x0 0x84000>,
+                        <0x0 0x05404000 0x0 0xfc000>;
                 reg-names = "ipa-base", "gsi-base";
                 pas-ids = <0xf>;
                 firmware-names = "ipa_fws";
@@ -110,16 +110,16 @@
                 qcom,throughput-threshold = <600 2500 5000>;
                 qcom,scaling-exceptions = <>;
 
-                #address-cells = <1>;
-                #size-cells = <1>;
+                #address-cells = <2>;
+                #size-cells = <2>;
 
                 ipa_smmu_ap_partition: ipa_smmu_ap_partition {
-                        iommu-addresses = <&ipa_smmu_ap 0x0 0x20000000>,
+                        iommu-addresses = <&ipa_smmu_ap 0x0 0x0 0x0 0x20000000>,
                             <&ipa_smmu_ap 0x40000000 0xC0000000>;
                 };
 
                 ipa_smmu_uc_partition: ipa_smmu_uc_partition {
-                        iommu-addresses = <&ipa_smmu_uc 0x0 0x20000000>,
+                        iommu-addresses = <&ipa_smmu_uc 0x0 0x0 0x0 0x20000000>,
                                 <&ipa_smmu_uc 0x40000000 0xC0000000>;
                 };
 
