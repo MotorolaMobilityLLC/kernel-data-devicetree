@@ -59,7 +59,7 @@
                 qcom,non-tn-collection-on-crash;
                 qcom,wan-use-skb-page;
                 qcom,rmnet-ctl-enable;
-                qcom,ipa-uc-holb-monitor;
+                qcom,gfp-no-retry;
                 qcom,ipa-holb-monitor-poll-period = <5>;
                 qcom,ipa-holb-monitor-max-cnt-wlan = <10>;
                 qcom,ipa-holb-monitor-max-cnt-usb = <10>;
@@ -115,12 +115,12 @@
 
                 ipa_smmu_ap_partition: ipa_smmu_ap_partition {
                         iommu-addresses = <&ipa_smmu_ap 0x0 0x0 0x0 0x20000000>,
-                            <&ipa_smmu_ap 0x40000000 0xC0000000>;
+                            <&ipa_smmu_ap 0x0 0x40000000 0xFFFFFFFF 0xC0000000>;
                 };
 
                 ipa_smmu_uc_partition: ipa_smmu_uc_partition {
                         iommu-addresses = <&ipa_smmu_uc 0x0 0x0 0x0 0x20000000>,
-                                <&ipa_smmu_uc 0x40000000 0xC0000000>;
+                                <&ipa_smmu_uc 0x0 0x40000000 0xFFFFFFFF 0xC0000000>;
                 };
 
                 /* smp2p information */
