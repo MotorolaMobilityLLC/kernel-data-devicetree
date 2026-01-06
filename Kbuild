@@ -63,6 +63,12 @@ endif
 
 ifeq ($(CONFIG_ARCH_CHORA),y)
 dtbo-y += chora-ipa.dtbo
+dtbo-y += chora-smem-mailbox.dtbo
+endif
+
+ifeq ($(CONFIG_ARCH_MALABAR),y)
+dtbo-y += malabar-ipa.dtbo
+dtbo-y += malabar-smem-mailbox.dtbo
 endif
 
 always-y	:= $(dtb-y) $(dtbo-y)
